@@ -19,7 +19,7 @@ header = ['Company', 'Name', 'Phone Number', 'Email Address', 'Address', 'Branch
 mywriter = csv.writer(output)
 mywriter.writerow(header)
 
-for r in range(120000):
+for r in range(100000):
     mywriter.writerow([Company, fake.name(), fake.phone_number(), fake.email(), random.choice(Ghana_regions),
                        random.choice(Demographics_list), random.choice(Services_list),
                        fake.random_int(min=1,max=9999, step=1),

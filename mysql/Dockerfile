@@ -1,3 +1,3 @@
 
 FROM mysql:latest
-COPY ./databse_students.sql /docker-entrypoint-initdb.d/
+COPY ./databse.sql /docker-entrypoint-initdb.d/

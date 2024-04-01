@@ -14,8 +14,8 @@ Demographics_list = ['Greater Accra', 'Volta']
 Customer_preference = 'Website'
 Communications_list = ['Email','Phone']
 
-header = ['Company', 'Name', 'Phone Number', 'Email Address', 'Address', 'Branch',
-          'Services / Products', 'Transaction Activity', 'Customer Preference', 'Communication Method']
+header = ['Company', 'FullName', 'PhoneNumber', 'EmailAddress', 'CustomerAddress', 'Branch',
+          'ServicesOrProducts', 'TransactionActivity', 'CustomerPreference', 'CommunicationMethod']
 mywriter = csv.writer(output)
 mywriter.writerow(header)
 

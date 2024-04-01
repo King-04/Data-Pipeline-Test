@@ -1,6 +1,6 @@
 services:
   pythonapp:
-    build: ./python/
+    build: ./ingestion_script/
     command: sh -c "sleep 10s ; python3 ./script.py"
     depends_on:
       - mysql

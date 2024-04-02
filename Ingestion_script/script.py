@@ -13,8 +13,8 @@ def generate_sql_inserts(csv_file, table_name):
     return sql_inserts
 
 # CSV file name and table name
-csv_file = 'Maphlix_Trust_Ghana_Ltd_Data.CSV'  # Replace 'your_csv_file.csv' with your CSV file name
-table_name = 'YourTableName'     # Replace 'YourTableName' with your table name
+csv_file = 'Maphlix_Trust_Ghana_Ltd_Data.CSV' 
+table_name = 'MaphlixData'     
 
 #establish connection with database
 connection = mysql.connector.connect(
@@ -22,10 +22,6 @@ connection = mysql.connector.connect(
 print("DB connected")
 
 cursor = connection.cursor()
-
-# CSV file name and table name
-csv_file = 'Maphlix_Trust_Ghana_Ltd_Data.CSV'  # Replace 'your_csv_file.csv' with your CSV file name
-table_name = 'MaphlixData'     # Replace 'YourTableName' with your table name
 
 # Generate SQL insert statements
 sql_inserts = generate_sql_inserts(csv_file, table_name)

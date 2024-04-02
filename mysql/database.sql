@@ -1,7 +1,7 @@
 use db;
 
 
-CREATE TABLE YourTableName (
+CREATE TABLE Maphlix (
     Company VARCHAR(255),
     FullName VARCHAR(255),
     PhoneNumber VARCHAR(20),
